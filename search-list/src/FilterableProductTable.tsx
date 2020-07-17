@@ -1,16 +1,10 @@
 import React from "react";
 import SearchBar from './SearchBar';
 import ProductTable from "./ProductTable";
-
-export interface Item {
-  category: string,
-  price: string,
-  stocked: boolean,
-  name: string
-};
+import Product from './Product';
 
 export default class FilterableProductTable extends React.Component<{}> {
-  private readonly allProducts: Item[];
+  private readonly allProducts: Product[];
 
   constructor(props: {}) {
     super(props);
@@ -28,7 +22,7 @@ export default class FilterableProductTable extends React.Component<{}> {
     return (
       <div>
         <SearchBar />
-        <ProductTable />
+        <ProductTable products={this.allProducts} />
       </div>
     );
   }

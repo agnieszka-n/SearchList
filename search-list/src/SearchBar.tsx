@@ -6,7 +6,7 @@ export default class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <div>
-          <input className="SearchBar-text" placeholder="Search..." type="text" />
+          <input className="SearchBar__text" placeholder="Search..." type="text" />
         </div>
         <input type="checkbox" id="stockOnly" />
         <label htmlFor="stockOnly">Only show products in stock</label>

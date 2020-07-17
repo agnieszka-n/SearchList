@@ -1,12 +1,17 @@
 import React from "react";
+import './ProductCategoryRow.css';
 
-export default class ProductCategoryRow extends React.Component {
+interface Props {
+  category: string;
+}
+
+export default class ProductCategoryRow extends React.Component<Props> {
   render(): JSX.Element {
     return (
-      <tr>
+      <tr className="ProductCategoryRow">
         <td colSpan={2}>
-          Product category
-      </td>
+          {this.props.category}
+        </td>
       </tr>
     )
   }
