@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import SearchList from './SearchList';
+import FilterableProductTable from './FilterableProductTable';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <SearchList />
+        <FilterableProductTable />
       </header>
     </div>
   );
