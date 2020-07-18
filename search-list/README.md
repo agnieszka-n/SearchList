@@ -1,3 +1,9 @@
+A small application for learning React - filtering a list of items. The idea comes from https://reactjs.org/docs/thinking-in-react.html, but implementation is fully mine.
+
+Technologies used: React, TypeScript, Jest, Enzyme.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
