@@ -47,8 +47,8 @@ export default class ProductTable extends React.Component<Props> {
       <table className="ProductTable">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Price</th>
+            <th className="ProductTable__column">Name</th>
+            <th className="ProductTable__column">Price</th>
           </tr>
         </thead>
         <tbody>

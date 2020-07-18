@@ -1,3 +1,7 @@
 .ProductTable {
   width: 100%;
 }
+
+.ProductTable__column {
+  width: 50%;
+}
