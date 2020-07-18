@@ -1,8 +1,8 @@
 import React from "react";
-import ProductCategoryRow from "./ProductCategoryRow";
-import ProductRow from "./ProductRow";
+import ProductCategoryRow from "./ProductCategoryRow/ProductCategoryRow";
+import ProductRow from "./ProductRow/ProductRow";
 import './ProductTable.css';
-import Product from "./Product";
+import Product from "../Product";
 
 interface Props {
   products: Product[]
