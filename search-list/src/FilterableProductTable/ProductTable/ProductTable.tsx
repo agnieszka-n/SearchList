@@ -4,7 +4,7 @@ import ProductRow from "./ProductRow/ProductRow";
 import './ProductTable.css';
 import Product from "../../Product";
 
-interface Props {
+export interface Props {
   products: Product[]
 }
 
