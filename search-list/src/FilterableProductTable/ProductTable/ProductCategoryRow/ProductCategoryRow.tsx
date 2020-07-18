@@ -1,7 +1,7 @@
 import React from "react";
 import './ProductCategoryRow.css';
 
-interface Props {
+export interface Props {
   category: string;
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import Product from "../../../Product";
 import './ProductRow.css';
 
-interface Props {
+export interface Props {
   product: Product
 }
 
