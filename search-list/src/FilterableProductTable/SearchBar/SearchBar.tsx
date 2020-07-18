@@ -13,9 +13,9 @@ export default class SearchBar extends React.Component<Props> {
     return (
       <div className="SearchBar">
         <div>
-          <input className="SearchBar-text" placeholder="Search..." type="text" value={this.props.filterText} onChange={this.props.onFilterTextChanged} />
+          <input className="SearchBar-text" placeholder="Search..." type="text" data-testid="searchQuery" value={this.props.filterText} onChange={this.props.onFilterTextChanged} />
         </div>
-        <input type="checkbox" id="stockOnly" checked={this.props.inStockOnly} onChange={this.props.onInStockOnlyChanged} />
+        <input type="checkbox" id="stockOnly" data-testid="inStockOnly" checked={this.props.inStockOnly} onChange={this.props.onInStockOnlyChanged} />
         <label htmlFor="stockOnly">Only show products in stock</label>
       </div>
     )
