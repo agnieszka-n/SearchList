@@ -38,9 +38,9 @@ export default class ProductTable extends React.Component<Props> {
     sortedProducts.forEach(item => {
       if (item.category !== currentCategory) {
         currentCategory = item.category;
-        tableRows.push(<ProductCategoryRow category={currentCategory} />);
+        tableRows.push(<ProductCategoryRow category={currentCategory} key={currentCategory} />);
       }
-      tableRows.push(<ProductRow product={item} />);
+      tableRows.push(<ProductRow product={item} key={item.name} />);
     });
 
     return (
